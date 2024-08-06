@@ -14,13 +14,15 @@ I have created an ETL pipeline designed to extract data from the source S3, tran
 
 **Features** : 
 
-1)Data Extraction: Retrieve metadata of IMDB movies and shows from the source S3 using Glue Crawler.
+1)**Data Extraction:** Utilized AWS S3 for storing raw IMDB movie data, ensuring secure and scalable storage, extracted the metadata using Glue Crawler.
 
-2)Data Transformation: Apply quality checks, cleaning, and standardization to ensure high-quality data.
+2)**Data Transformation:** Employed AWS Glue for data transformation, implementing rules for data quality and consistency checks. This included handling missing values, data type conversions, and applying business rules.
 
-3)Data Loading: Load transformed data into the destination Redshift table for analysis. And Loading Bad Data into S3 bucket for further analysis.
+3)**Data Loading:** Load transformed data into the destination Redshift table for analysis. And Loading Bad Data into S3 bucket for further analysis.
 
-4)Monitoring and Logging: Monitor the ETL pipeline's performance and log any errors or anomalies for easy troubleshooting and getting alerts on the registered email account.
+4)**Automation and Monitoring:** Integrated AWS CloudWatch for monitoring ETL job performance and logging. Set up AWS EventBridge to trigger ETL jobs based on specific events.
+
+5)**Alerting and Notifications:** Configured AWS SNS to send notifications for ETL job statuses and failures, ensuring timely updates and quick resolution of issues.
 
 <img width="1468" alt="imdb-glue-visual-ETL" src="https://github.com/user-attachments/assets/6d845536-075e-459e-a9c1-90457010f98f">
 
